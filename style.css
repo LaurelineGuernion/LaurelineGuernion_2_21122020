@@ -24,18 +24,16 @@ li {
 
 a {
 	text-decoration: none;
+	color: black;
 }
 
 a:hover {
 	color:#0065FC;
 }
 
+/*DÉBUT CSS MOBILE-FIRST*/
 
 /* HEADER*/
-
-header a {
-	color: black;
-}
 
 #logo {
 	margin-left: 20px;
@@ -52,9 +50,12 @@ header a {
 	color: #0065FC;
 }
 
+#inscrire a:hover {
+	font-weight: bolder;
+}
+
 nav ul {
 	display: flex;
-	padding: 0;
 }
 
 .hebergements_activites {
@@ -66,12 +67,9 @@ nav ul {
 
 .hebergements_activites:hover {
 	border-bottom: solid 3px #0065FC;
-	color:#0065FC
+	color:#0065FC;
 }
 
-header li:hover {
-	color: #0065FC;
-}
 
 /*FIN HEADER*/
 
@@ -111,7 +109,7 @@ input {
 	border-radius: 10px;
 }
 
-#recherchetexte {
+#recherchetexte { /*Faire disparaître provisoirement sur mobile*/
 	display: none;
 }
 
@@ -121,15 +119,7 @@ input {
 	margin: 30px 10px 30px 20px;
 }
 
-#filtres + p{
-	font-weight: bold;
-}
-
-#filtres a {
-	color:black;
-}
-
-#titre_filtres {
+#titre_filtre {
 	font-weight: bold;
 }
 
@@ -154,7 +144,6 @@ input {
 #filtres li:hover {
 	color:#0065FC;
 	background-color:#F2F2F2;
-	border-radius: 25px;
 }
 
 .fa-info {
@@ -185,17 +174,9 @@ input {
 	background-color: #F2F2F2;
 }
 
-article a {
-	color: black;
-}
-
 figure {
 	position: relative;
 	margin: 15px;
-}
-
-figure:hover {
-	box-shadow: 0 2px 4px black;
 }
 
 #populaires figure {
@@ -215,6 +196,10 @@ figure:hover {
 	height: 150px;
 }
 
+#populaires img:hover {
+	width: 45%;
+}
+
 figcaption .fa-star {
 	color: #0065FC;
 }
@@ -225,7 +210,7 @@ figcaption .gris {
 
 .etoiles_populaires {
 	position: absolute;
-	bottom: 5px;
+	bottom: 10px;
 }
 
 /* hébergements Marseille*/
@@ -243,6 +228,10 @@ figcaption .gris {
 	min-width:100%;
 }
 
+#hebergements img:hover {
+	height: 157px;
+}
+
 .etoiles_hebergements {
 	position: absolute;
 	bottom: 10px;
@@ -254,11 +243,11 @@ section h2 {
 	margin-left:20px;
 }
 
-#hebergements h3{
+#hebergements h3 {
 	margin: 2px 0 5px 8px;
 }
 
-#hebergements p{
+#hebergements p {
 	margin: 2px 0 30px 10px;
 }
 
@@ -279,6 +268,10 @@ section h2 {
 	min-width:100%;
 }
 
+#activites_marseille img:hover {
+	height: 157px;
+}
+
 .encart_activites {
 	box-shadow: 0 7px 8px #dfdcdc;
 	border-radius: 30px;
@@ -287,10 +280,6 @@ section h2 {
 
 .encart_activites figcaption {
 	padding: 0 0 5px 15px;
-}
-
-#activites_marseille a {
-	color: black;
 }
 
 /*fin bloc Activités à Marseille*/
@@ -311,9 +300,4 @@ footer li {
 	margin-top: 50px;
 }
 
-footer a{
-	color: black;
-}
-footer a:hover{
-	color: #0065FC;
-}
+/*FIN CSS MOBILE-FIRST*/
